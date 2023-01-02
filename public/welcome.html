@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <form>
+            <table width="900px"  Border="0">
+        <th Align="left">
+            Internet Usage Survey
+        </th>
+        <tr>
+            <td>
+                this survey is being counducted to help identify the Internet usage patterns of our customers.<br/>
+                Please take a few moments to complete and submit this short form.Thank you for your cooperation<br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What type of Internet connection do you have?<br/>
+                (select One)
+            </td>
+            <td>
+                &nbsp;&nbsp;<select name="type" id="Itype" size="4">
+               <option value="Dial-up">Dial-up</option>
+               <option value="DSL">DSL</option>
+               <option value="High Speed Cable">High Speed Cable</option>
+               <option value="Other">Other</option>
+                </select><br/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="comp">
+                    What type of computer do you use most at home?
+                </label>
+            </td>
+            <td>
+                <input type="radio" name="cmp" id="desk"><label for="desk">Desktop</label>
+                <input type="radio" name="cmp" id="lap"><label for="lap">Laptop</label><br/><br/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="MR">
+                    How would you describe your main reason for using the internet?
+                </label>
+            </td>
+            <td>
+                <input type="radio" name="work" id="MR"><label for="MR">To do work-related activties</label><br/>
+                <input type="radio" name="work" id="school"><label for="school">To do school-related activities</label><br/>
+                <input type="radio" name="work" id="entr"><label for="entr">For entertaintment purpose</label><br/>
+                <input type="radio" name="work" id="other"><label for="other">Other Activities</label>
+            </td>
+        </tr>
+        <div>
+        <tr>
+            <td>
+            <fieldset>
+                <legend>Types of sites visited</legend>
+                What types of web sites do you access most often?<br/>
+                Check all that apply.<br/>
+                <input type="checkbox" name="impmt" id="01self"><label for="01self">Self Improvement</label><br/>
+                <input type="checkbox" name="ent" id="02ent"><label for="02ent">Entertainment</label><br/>
+                <input type="checkbox" name='news' id="03news"><label for="03news">News and Sports</label><br/>
+                <input type="checkbox" name='ref' id="04ref"><label for="04ref">Reference</label><br/>
+                <input type="checkbox" name='mail' id="05mail"><label for="05mail">Email</label><br/>
+            </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>Time spent using Internet</legend>
+                    During an average week,how long do you spend online?<br/>
+                    <input type="radio" name="time" id="01"><label for="01">0-3 hours</label><br/>
+                    <input type="radio" name="time" id="02"><label for="02">4-6 hours</label><br/>
+                    <input type="radio" name="time" id="03"><label for="03">7-10 hours</label><br/>
+                    <input type="radio" name="time" id="04"><label for="04">11-14 hours</label><br/>
+                    <input type="radio" name="time" id="05"><label for="05">15+ hours</label>
+                </fieldset>
+            </td>
+        </tr>
+        </div>
+            <tr>
+                <td colspan="2">
+                    Plese comment on your opinions concerning Internet privacy and safety.
+                    <textarea rows="5" cols="150" name="opinions" id="opinions"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">First Name:</label>
+                    <input type="text" name="name" id="name" size="50"><br/><br/>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" size="2" max="60" min="18">
+                </td>
+                <td>
+                    <label for="ln">Last Name:</label>
+                    <input type="text" name="ln" id="ln" size="50"><br/><br/>
+                    <label for="zip">Zip Code:</label>
+                    <input type="number" name="zip" id="zip" minlength="6">
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2" Align="center"><button type="submit" name="btn1" id="btn1" value="submit" >click to submit</button>
+                <button type="reset" name="btn2" id="btn2" value="reset" >clear form</button>
+            </td>
+            </tr>
+            </table>
+        </form>
+        </fieldset>
+</body>
+</html>
